@@ -36,7 +36,7 @@
 | 3 | Claude-sonnet-4-5 | 🔒 Closed | General | 50 | 58.1% |
 | **4** | **EvoCUA-20260105 (Ours)** | **🟢 Open** | **General** | **50** | **56.7% 🥇** |
 | 5 | DeepMiner-Mano-72B | 🔒 Closed | Specialized | 100 | 53.9% |
-| 6 | UI-TARS-2-2509 | 🟢 Open | General | 100 | 53.1% |
+| 6 | UI-TARS-2-2509 | 🔒 Closed | General | 100 | 53.1% |
 | 7 | EvoCUA (Previous Version) | 🔒 Closed | General | 50 | 50.3% |
 | 8 | OpenCUA-72B | 🟢 Open | Specialized | 100 | 45.0% |
 | ... | ... | ... | ... | ... | ... |
