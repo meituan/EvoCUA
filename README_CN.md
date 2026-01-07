@@ -2,7 +2,7 @@
 
 # EvoCUA: Evolving Computer Use Agent
 
-**🥇 开源模型第一 | 擅长 Computer Use 的通用多模态大模型**
+**🥇 OSWorld 开源模型 No.1 | 擅长计算机操作的通用多模态大模型**
 
 [![Model](https://img.shields.io/badge/🤗%20HuggingFace-EvoCUA--32B-blue)](https://huggingface.co/meituan/EvoCUA-32B-20260105)
 [![OSWorld Score](https://img.shields.io/badge/OSWorld-56.7%25-brightgreen)](https://os-world.github.io/)
@@ -20,10 +20,10 @@
 
 ## 🌟 亮点
 
-- 🥇 **开源模型第一**：达到 **56.7%** 任务完成率，**开源模型中排名第一**
-- 📈 **显著提升**：比 OpenCUA-72B 高 11.7%（45.0%→56.7%），比 Qwen3-VL Thinking 高 15.1%（41.6%→56.7%），参数更少、步数减半
-- 🖥️ **端到端多轮自动化**：通过截图和自然语言指令，流畅操作 Chrome、Excel、PPT、VSCode 等软件
-- 🧠 **创新训练方法**：我们的数据合成与训练方法在提升 Computer Use 能力的同时，保持模型通用能力
+- 🥇 **开源模型榜首**：在 OSWorld 上达到 **56.7%** 的任务完成率，位居**所有开源模型第一**。
+- 📈 **性能显著提升**：相比 OpenCUA-72B 提升 11.7%（45.0%→56.7%），相比 Qwen3-VL Thinking 提升 15.1%（41.6%→56.7%），且**参数更少、步数减半**。
+- 🖥️ **端到端多轮自动化**：仅凭屏幕截图和自然语言指令，即可流畅操作 Chrome、Excel、PPT、VSCode 等各类软件，完成复杂任务。
+- 🧠 **创新训练范式**：采用独特的数据合成与训练方法，在大幅提升 Computer Use 能力的同时，保持了模型的通用多模态能力。
 
 ---
 
@@ -42,15 +42,15 @@
 | ... | ... | ... | ... | ... | ... |
 | 13 | Qwen3-VL-Flash | 🟢 开源 | 通用模型 | 100 | 41.6% |
 
-> EvoCUA 是**开源模型第一**，仅用 **50 步**即达到竞争力效果。人类表现仍显著高于当前最佳模型，领域仍有很大提升空间。
+> EvoCUA 高居**开源模型第一**，仅需 **50 步**即可达到极具竞争力的效果。尽管如此，人类水平仍显著高于当前最佳模型，该领域仍有巨大的探索与提升空间。
 
 ---
 
 ## 🚀 快速开始
 
-### 安装
+### 安装环境
 
-建议使用 Python 3.12
+推荐使用 Python 3.12。
 
 ```bash
 git clone https://github.com/meituan/EvoCUA.git
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 ### 模型下载与部署
 
-EvoCUA 需要从 HuggingFace 下载模型权重，并使用 **vLLM 0.12** 部署为 OpenAI 兼容的推理服务。
+请先从 HuggingFace 下载 EvoCUA 模型权重，并使用 **vLLM 0.12** 将其部署为兼容 OpenAI 接口的推理服务。
 
 ```bash
 # 1) 下载模型权重
@@ -95,6 +95,7 @@ python3 run_multienv_evocua.py \
   --test_all_meta_path evaluation_examples/test_nogdrive.json \
   --max_steps 50 \
   --num_envs 30 \
+  --temperature 0.01 \
   --max_history_turns 4 \
   --coordinate_type relative \
   --resize_factor 32 \
@@ -107,34 +108,34 @@ python3 run_multienv_evocua.py \
 
 ```
 EvoCUA/
-├── run_multienv_evocua.py      # 评测入口（多环境并行）
-├── lib_run_single.py           # 单任务 rollout 执行逻辑（轨迹、截图、录屏、评分）
-├── lib_results_logger.py       # 评测结果实时汇总写入 results.json
-├── desktop_env/                # OSWorld 环境侧实现
-│   ├── providers/              # VM 提供商（AWS/VMware/Docker 等）
+├── run_multienv_evocua.py      # 评测入口（支持多环境并行）
+├── lib_run_single.py           # 单任务 Rollout 执行逻辑（含轨迹记录、截图、录屏、评分）
+├── lib_results_logger.py       # 评测结果实时汇总（写入 results.json）
+├── desktop_env/                # OSWorld 环境端实现
+│   ├── providers/              # 虚拟机提供商接口（AWS/VMware/Docker 等）
 │   ├── controllers/            # 环境控制器
 │   └── evaluators/             # 任务评估器
 ├── mm_agents/
-│   └── evocua/                 # EvoCUA Agent（Prompt、解析、动作生成）
-└── evaluation_examples/        # OSWorld 任务配置
+│   └── evocua/                 # EvoCUA Agent 核心代码（Prompt构建、输出解析、动作生成）
+└── evaluation_examples/        # OSWorld 任务配置集
 ```
 
 ---
 
-## 🔧 配置
+## 🔧 配置指南
 
-环境变量可以在 `.env` 文件中配置（参考 `env.template`）：
+环境变量可通过 `.env` 文件进行配置（请参考 `env.template`）：
 
 ```bash
 cp env.template .env
-# 编辑 .env 文件，填入你的配置
+# 编辑 .env 文件，填入您的具体配置
 ```
 
 ---
 
 ## 📖 关于 OSWorld
 
-[OSWorld](https://os-world.github.io/) 是 Computer Use Agent 领域最具影响力的基准测试。包括 **OpenAI、Anthropic、字节跳动 Seed、月之暗面、智谱 AI、阶跃星辰** 等多家顶尖 AI 团队均在使用该基准进行评测。OSWorld 通过与真实桌面环境的多轮交互，评估 Agent 完成实际电脑任务的能力。
+[OSWorld](https://os-world.github.io/) 是 Computer Use Agent 领域最具影响力的基准测试，被 **OpenAI、Anthropic、字节跳动 Seed、月之暗面、智谱 AI、阶跃星辰** 等众多顶尖 AI 团队广泛采用。OSWorld 通过模拟真实桌面环境中的多轮交互，全面评估 Agent 完成实际计算机任务的能力。
 
 ---
 
@@ -142,20 +143,20 @@ cp env.template .env
 
 - 🤗 **模型权重**：[meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)
 - 📊 **OSWorld 基准测试**：[os-world.github.io](https://os-world.github.io/)
-- 📄 **技术报告**：即将发布!
-- 🚀 **更多模型尺寸**：多种尺寸的模型正在路上，即将开源！
+- 📄 **技术报告**：即将发布，敬请期待！
+- 🚀 **更多规格**：多种尺寸的模型正在路上，即将开源！
 
 ---
 
 ## 🙏 致谢
 
-衷心感谢开源社区对 Computer Use Agent 领域的杰出贡献。特别感谢 **Xinyuan Wang**（[OpenCUA](https://github.com/xlang-ai/OpenCUA)）和 **Tianbao Xie**（[OSWorld](https://github.com/xlang-ai/OSWorld)）在评测、讨论和各种反馈方面给予的宝贵支持，他们的开创性工作极大地启发和推动了我们的研究。我们致力于回馈社区，将持续开源我们的研究成果，推动领域发展。
+我们诚挚感谢开源社区在 Computer Use Agent 领域的杰出贡献。特别感谢 **Xinyuan Wang**（[OpenCUA](https://github.com/xlang-ai/OpenCUA)）和 **Tianbao Xie**（[OSWorld](https://github.com/xlang-ai/OSWorld)）在评测、技术探讨及反馈方面提供的宝贵支持，他们的开创性工作极大地启发并推动了本项目的发展。我们致力于回馈社区，并将持续开源研究成果，与大家共同推动领域进步。
 
 ---
 
 ## 📝 引用
 
-如果 EvoCUA 对您的研究有所帮助，请考虑引用：
+如果您觉得 EvoCUA 对您的研究有帮助，请考虑引用：
 
 ```bibtex
 @misc{evocua2026,
