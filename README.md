@@ -40,7 +40,7 @@
 | 7 | EvoCUA (Previous Version) | 🔒 Closed | General | 50 | 50.3% |
 | 8 | OpenCUA-72B | 🟢 Open | Specialized | 100 | 45.0% |
 | ... | ... | ... | ... | ... | ... |
-| 13 | Qwen3-VL-Flash | 🟢 Open | General | 100 | 41.6% |
+| 13 | Qwen3-VL-Flash | 🔒 Closed | General | 100 | 41.6% |
 
 > EvoCUA is **#1 among all open-source models**, achieving competitive results with only **50 steps**. Human-level performance remains significantly higher, indicating substantial room for improvement.
 
