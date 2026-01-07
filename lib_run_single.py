@@ -9,6 +9,12 @@ from lib_results_logger import log_task_completion
 logger = logging.getLogger("desktopenv.experiment")
 
 
+def setup_logger(example, example_result_dir):
+    runtime_logger = logging.getLogger(f"desktopenv.example.{example['id']}")
+    runtime_logger.setLevel(logging.DEBUG)
+    runtime_logger.addHandler(logging.FileHandler(os.path.join(example_result_dir, "runtime.log")))
+    return runtime_logger
+
 def run_single_example_evocua(agent, env, example, max_steps, instruction, args, example_result_dir, scores):
     """
     Unified run function for EvoCUAAgent (supporting both S1 and S2 modes).
