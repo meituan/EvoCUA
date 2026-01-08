@@ -158,9 +158,10 @@ EvoCUA/
 ```bibtex
 @misc{evocua2026,
   title={EvoCUA: Evolving Computer Use Agent},
-  author={Meituan LongCat Team},
+  author={Chong Peng* and Taofeng Xue*},
   year={2026},
-  url={https://github.com/meituan/EvoCUA}
+  url={https://github.com/meituan/EvoCUA},
+  note={* Equal contribution}
 }
 ```
 
