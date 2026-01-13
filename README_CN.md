@@ -5,6 +5,7 @@
 **🥇 OSWorld 开源模型 No.1 | 擅长计算机操作的通用多模态大模型**
 
 [![Model](https://img.shields.io/badge/🤗%20HuggingFace-EvoCUA--32B-blue)](https://huggingface.co/meituan/EvoCUA-32B-20260105)
+[![Model](https://img.shields.io/badge/🤗%20HuggingFace-EvoCUA--8B-blue)](https://huggingface.co/meituan/EvoCUA-8B-20260105)
 [![OSWorld Score](https://img.shields.io/badge/OSWorld-56.7%25-brightgreen)](https://os-world.github.io/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](./LICENSE)
 
@@ -38,7 +39,8 @@
 | 5 | DeepMiner-Mano-72B | 🔒 闭源 | 专用模型 | 100 | 53.9% |
 | 6 | UI-TARS-2-2509 | 🔒 闭源 | 通用模型 | 100 | 53.1% |
 | 7 | EvoCUA (Previous) | 🔒 闭源 | 通用模型 | 50 | 50.3% |
-| 8 | OpenCUA-72B | 🟢 开源 | 专用模型 | 100 | 45.0% |
+| **8** | **EvoCUA-8B-20260105 (Ours)** | **🟢 开源** | **通用模型** | **50** | **46.06%** |
+| 9 | OpenCUA-72B | 🟢 开源 | 专用模型 | 100 | 45.0% |
 | ... | ... | ... | ... | ... | ... |
 | 13 | Qwen3-VL-Flash | 🔒 闭源 | 通用模型 | 100 | 41.6% |
 
@@ -138,10 +140,12 @@ EvoCUA/
 
 ## 🔗 相关资源
 
-- 🤗 **模型权重**：[meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)
+- 🤗 **模型权重**：
+  - [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) - OSWorld 得分：**56.7%** 🥇
+  - [meituan/EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) - OSWorld 得分：**46.06%** 🆕
 - 📊 **OSWorld 基准测试**：[os-world.github.io](https://os-world.github.io/)
 - 📄 **技术报告**：即将发布，敬请期待！
-- 🚀 **更多规格**：多种尺寸的模型正在路上，即将开源！
+- 🚀 **更多规格**：更多尺寸的模型正在路上！
 
 ---
 
