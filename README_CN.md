@@ -21,7 +21,7 @@
 
 ## 📢 更新日志
 
-- **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105)，OSWorld 得分 **46.06%** — **仅用 1/9 参数量即超越此前开源 SOTA OpenCUA-72B (45.0%)！** 🆕
+- **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — OSWorld 得分 **46.06%**，**以更小的参数量实现与 72B 级别开源模型相当的性能！** 🆕
 - **2026.01.05**：发布 [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)，OSWorld 得分 **56.7%**，登顶**开源模型榜首** 🥇
 
 ---

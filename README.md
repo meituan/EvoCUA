@@ -21,7 +21,7 @@
 
 ## 📢 Updates
 
-- **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) with **46.06%** on OSWorld — **surpasses OpenCUA-72B (45.0%) with only 1/9 parameters!** 🆕
+- **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.06%** on OSWorld, **competitive with 72B-level models using fewer parameters!** 🆕
 - **2026.01.05**: Released [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) with **56.7%** on OSWorld, achieving **#1** among open-source models 🥇
 
 ---
