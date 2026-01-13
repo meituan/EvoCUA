@@ -5,6 +5,7 @@
 **🥇 #1 Open-Source Model on OSWorld | A General-Purpose Multimodal Model Excelling at Computer Use**
 
 [![Model](https://img.shields.io/badge/🤗%20HuggingFace-EvoCUA--32B-blue)](https://huggingface.co/meituan/EvoCUA-32B-20260105)
+[![Model](https://img.shields.io/badge/🤗%20HuggingFace-EvoCUA--8B-blue)](https://huggingface.co/meituan/EvoCUA-8B-20260105)
 [![OSWorld Score](https://img.shields.io/badge/OSWorld-56.7%25-brightgreen)](https://os-world.github.io/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange)](./LICENSE)
 
@@ -38,7 +39,8 @@
 | 5 | DeepMiner-Mano-72B | 🔒 Closed | Specialized | 100 | 53.9% |
 | 6 | UI-TARS-2-2509 | 🔒 Closed | General | 100 | 53.1% |
 | 7 | EvoCUA (Previous Version) | 🔒 Closed | General | 50 | 50.3% |
-| 8 | OpenCUA-72B | 🟢 Open | Specialized | 100 | 45.0% |
+| **8** | **EvoCUA-8B-20260105 (Ours)** | **🟢 Open** | **General** | **50** | **46.06%** |
+| 9 | OpenCUA-72B | 🟢 Open | Specialized | 100 | 45.0% |
 | ... | ... | ... | ... | ... | ... |
 | 13 | Qwen3-VL-Flash | 🔒 Closed | General | 100 | 41.6% |
 
@@ -138,10 +140,12 @@ EvoCUA/
 
 ## 🔗 Resources
 
-- 🤗 **Model Weights**: [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)
+- 🤗 **Model Weights**:
+  - [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) - OSWorld Score: **56.7%** 🥇
+  - [meituan/EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) - OSWorld Score: **46.06%** 🆕
 - 📊 **OSWorld Benchmark**: [os-world.github.io](https://os-world.github.io/)
 - 📄 **Technical Report**: Coming Soon
-- 🚀 **More Model Sizes**: Models of various sizes are on the way and will be open-sourced soon!
+- 🚀 **More Model Sizes**: More models of various sizes are on the way!
 
 ---
 
