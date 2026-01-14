@@ -21,7 +21,7 @@
 
 ## 📢 Updates
 
-- **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.06%** on OSWorld, **competitive with 72B-level models using fewer parameters!** 🆕
+- **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.1%** on OSWorld, **competitive with 72B-level models using fewer parameters!** 🆕
 - **2026.01.05**: Released [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) with **56.7%** on OSWorld, achieving **#1** among open-source models 🥇
 
 ---
@@ -46,7 +46,7 @@
 | 5 | DeepMiner-Mano-72B | 🔒 Closed | Specialized | 100 | 53.9% |
 | 6 | UI-TARS-2-2509 | 🔒 Closed | General | 100 | 53.1% |
 | 7 | EvoCUA (Previous Version) | 🔒 Closed | General | 50 | 50.3% |
-| **8** | **EvoCUA-8B-20260105 (Ours)** | **🟢 Open** | **General** | **50** | **46.06%** |
+| **8** | **EvoCUA-8B-20260105 (Ours)** | **🟢 Open** | **General** | **50** | **46.1%** |
 | 9 | OpenCUA-72B | 🟢 Open | Specialized | 100 | 45.0% |
 | ... | ... | ... | ... | ... | ... |
 | 13 | Qwen3-VL-Flash | 🔒 Closed | General | 100 | 41.6% |
