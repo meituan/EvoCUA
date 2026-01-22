@@ -21,7 +21,8 @@
 
 ## 📢 Updates
 
-- **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.1%** on OSWorld, **competitive with 72B-level models using fewer parameters!** 🆕
+- **2026.01.22**: Released [Technical Report](./tech_report.pdf) 📄 🆕
+- **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.1%** on OSWorld, **competitive with 72B-level models using fewer parameters!**
 - **2026.01.05**: Released [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) with **56.7%** on OSWorld, achieving **#1** among open-source models 🥇
 
 ---
@@ -151,7 +152,7 @@ EvoCUA/
   - [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) - OSWorld Score: **56.7%** 🥇
   - [meituan/EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) - OSWorld Score: **46.06%** 🆕
 - 📊 **OSWorld Benchmark**: [os-world.github.io](https://os-world.github.io/)
-- 📄 **Technical Report**: Coming Soon
+- 📄 **Technical Report**: [tech_report.pdf](./tech_report.pdf)
 - 🚀 **More Model Sizes**: More models of various sizes are on the way!
 
 ---
@@ -168,7 +169,7 @@ If you find EvoCUA useful in your research, please consider citing:
 
 ```bibtex
 @misc{evocua2026,
-  title={EvoCUA: Evolving Computer Use Agent},
+  title={EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience},
   author={Chong Peng* and Taofeng Xue*},
   year={2026},
   url={https://github.com/meituan/EvoCUA},

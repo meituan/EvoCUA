@@ -21,7 +21,8 @@
 
 ## 📢 更新日志
 
-- **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — OSWorld 得分 **46.06%**，**以更小的参数量实现与 72B 级别开源模型相当的性能！** 🆕
+- **2026.01.22**：发布[技术报告](./tech_report.pdf) 📄 🆕
+- **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — OSWorld 得分 **46.1%**，**以更小的参数量实现与 72B 级别开源模型相当的性能！**
 - **2026.01.05**：发布 [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)，OSWorld 得分 **56.7%**，登顶**开源模型榜首** 🥇
 
 ---
@@ -151,7 +152,7 @@ EvoCUA/
   - [meituan/EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) - OSWorld 得分：**56.7%** 🥇
   - [meituan/EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) - OSWorld 得分：**46.06%** 🆕
 - 📊 **OSWorld 基准测试**：[os-world.github.io](https://os-world.github.io/)
-- 📄 **技术报告**：即将发布，敬请期待！
+- 📄 **技术报告**：[tech_report.pdf](./tech_report.pdf)
 - 🚀 **更多规格**：更多尺寸的模型正在路上！
 
 ---
