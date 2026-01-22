@@ -21,7 +21,7 @@
 
 ## 📢 更新日志
 
-- **2026.01.22**：发布[技术报告](./tech_report.pdf) 📄 🆕
+- **2026.01.22**：发布[EvoCUA技术报告](./tech_report.pdf) 📄 🆕
 - **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — OSWorld 得分 **46.1%**，**以更小的参数量实现与 72B 级别开源模型相当的性能！**
 - **2026.01.05**：发布 [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)，OSWorld 得分 **56.7%**，登顶**开源模型榜首** 🥇
 
@@ -169,7 +169,7 @@ EvoCUA/
 
 ```bibtex
 @misc{evocua2026,
-  title={EvoCUA: Evolving Computer Use Agent},
+  title={EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience},
   author={Chong Peng* and Taofeng Xue*},
   year={2026},
   url={https://github.com/meituan/EvoCUA},
