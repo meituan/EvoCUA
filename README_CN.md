@@ -177,12 +177,11 @@ EvoCUA/
 如果您觉得 EvoCUA 对您的研究有帮助，请考虑引用：
 
 ```bibtex
-@misc{evocua2026,
+@article{xue2026evocua,
   title={EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience},
-  author={Chong Peng* and Taofeng Xue*},
-  year={2026},
-  url={https://github.com/meituan/EvoCUA},
-  note={* Equal contribution}
+  author={Xue, Taofeng and Peng, Chong and Huang, Mianqiu and Guo, Linsen and Han, Tiancheng and Wang, Haozhe and Wang, Jianing and Zhang, Xiaocheng and Yang, Xin and Zhao, Dengchang and others},
+  journal={arXiv preprint arXiv:2601.15876},
+  year={2026}
 }
 ```
 
