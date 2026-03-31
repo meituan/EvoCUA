@@ -20,8 +20,9 @@
 ---
 
 ## 📢 更新日志
-- **2026.01.23**: EvoCUA 在 [Hugging Face Daily Papers](https://huggingface.co/papers/2601.15876) **中排名 (#1)** 🏆 🆕
-- **2026.01.22**：发布[EvoCUA技术报告](https://arxiv.org/abs/2601.15876) 📄 🆕
+- **2026.03.31**：EvoCUA-32B 在 WindowsAgentArena (WAA) 上取得 **56.48%**，超越 UI-TARS-2 约 6 个百分点——展现出强大的零样本跨操作系统泛化能力 🆕
+- **2026.01.23**: EvoCUA 在 [Hugging Face Daily Papers](https://huggingface.co/papers/2601.15876) **中排名 (#1)** 🏆
+- **2026.01.22**：发布[EvoCUA技术报告](https://arxiv.org/abs/2601.15876) 📄
 - **2026.01.13**：发布 [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — OSWorld 得分 **46.1%**，**以更小的参数量实现与 72B 级别开源模型相当的性能！**
 - **2026.01.05**：发布 [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105)，OSWorld 得分 **56.7%**，登顶**开源模型榜首** 🥇
 
@@ -53,6 +54,20 @@
 | 13 | Qwen3-VL-Flash | 🔒 闭源 | 通用模型 | 100 | 41.6% |
 
 > EvoCUA 高居**开源模型第一**，仅需 **50 步**即可达到极具竞争力的效果。尽管如此，人类水平仍显著高于当前最佳模型，该领域仍有巨大的探索与提升空间。
+
+### 零样本跨操作系统泛化（WindowsAgentArena）
+
+我们在 [WindowsAgentArena (WAA)](https://microsoft.github.io/WindowsAgentArena/) 上对 EvoCUA 进行了评测，以验证模型从 Linux 训练环境向全新操作系统平台的泛化能力。如下表所示，EvoCUA-32B 达到 **56.48%**，超越领先的前沿 GUI Agent UI-TARS-2（50.6%）近 **6 个百分点**。
+
+| 模型 | WAA |
+|------|-----|
+| Qwen3-VL-32B-Instruct | 30.9% [1] |
+| Qwen3-VL-32B-Thinking (Base) | 42.9% [1] |
+| UI-TARS-2 | 50.6% [2] |
+| **EvoCUA-32B (Ours)** | **56.48%** |
+
+> [1] Bai et al., *Qwen3-VL Technical Report* (arXiv:2511.21631, 2025).
+> [2] Wang et al., *UI-TARS-2 Technical Report* (arXiv:2509.02544, 2025).
 
 ---
 

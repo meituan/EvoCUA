@@ -20,8 +20,9 @@
 ---
 
 ## 📢 Updates
-- **2026.01.23**: EvoCUA ranked **#1** on [Hugging Face Daily Papers](https://huggingface.co/papers/2601.15876) 🏆 🆕
-- **2026.01.22**: Released [EvoCUA Technical Report](./tech_report.pdf) 📄 🆕
+- **2026.03.31**: EvoCUA-32B achieves **56.48%** on WindowsAgentArena (WAA), surpassing UI-TARS-2 by ~6 points — demonstrating strong zero-shot cross-OS generalization 🆕
+- **2026.01.23**: EvoCUA ranked **#1** on [Hugging Face Daily Papers](https://huggingface.co/papers/2601.15876) 🏆
+- **2026.01.22**: Released [EvoCUA Technical Report](./tech_report.pdf) 📄
 - **2026.01.13**: Released [EvoCUA-8B-20260105](https://huggingface.co/meituan/EvoCUA-8B-20260105) — achieves **46.1%** on OSWorld, **competitive with 72B-level models using fewer parameters!**
 - **2026.01.05**: Released [EvoCUA-32B-20260105](https://huggingface.co/meituan/EvoCUA-32B-20260105) with **56.7%** on OSWorld, achieving **#1** among open-source models 🥇
 
@@ -53,6 +54,20 @@
 | 13 | Qwen3-VL-Flash | 🔒 Closed | General | 100 | 41.6% |
 
 > EvoCUA is **#1 among all open-source models**, achieving competitive results with only **50 steps**. Human-level performance remains significantly higher, indicating substantial room for improvement.
+
+### Zero-shot Cross-OS Control (WindowsAgentArena)
+
+We evaluated EvoCUA on [WindowsAgentArena (WAA)](https://microsoft.github.io/WindowsAgentArena/) to test generalization from the Linux-based training environment to a wholly different OS platform. As shown below, EvoCUA-32B reaches **56.48%**, surpassing the leading frontier GUI agent UI-TARS-2 (50.6%) by nearly **6 points**.
+
+| Model | WAA |
+|-------|-----|
+| Qwen3-VL-32B-Instruct | 30.9% [1] |
+| Qwen3-VL-32B-Thinking (Base) | 42.9% [1] |
+| UI-TARS-2 | 50.6% [2] |
+| **EvoCUA-32B (Ours)** | **56.48%** |
+
+> [1] Bai et al., *Qwen3-VL Technical Report* (arXiv:2511.21631, 2025).
+> [2] Wang et al., *UI-TARS-2 Technical Report* (arXiv:2509.02544, 2025).
 
 ---
 
